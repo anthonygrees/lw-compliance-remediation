@@ -2,7 +2,20 @@
 
 # Lacework Compliance Remediation
 
-Terraform module for remediating common non-compliant resources in AWS as detected by Lacework.
+Terraform module for remediating common non-compliant resources in AWS as detected by Lacework.  
+  
+Lacework has a number of functions for automatically remediating common non-compliant resources in AWS as detected by Lacework.   
+Here are a few examples:  
+- delete the AWS Console Login Profile for a user.  
+- disable any unused access keys for a user.  
+- block public access to an S3 bucket.  
+- delete all ACLs from an S3 bucket.  
+- enable access logs on an S3 bucket.  
+- enable versioning on an S3 bucket.  
+- delete all rules on a security group with a scope(cidr) containing or equal to a given scope, port and protocol are optional.  
+- block all traffic to/from an EC2 instance.  
+- stop an EC2 instance.  
+- terminate an EC2 instance.  
 
 ## Requirements
 
